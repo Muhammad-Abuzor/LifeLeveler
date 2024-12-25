@@ -1,0 +1,41 @@
+------------------------------------------------------HOME SCREEN------------------------------------------------------
+
+Print("Welcome user")
+Print("Do you want to log in or sign up?  1 for login, 2 for sign up)
+Input(a)
+If a = 1 { login()}
+elseif  a = 2 { signup()}
+else ("enter correct option")
+
+option = all_listed_options_number
+
+Print({menu})
+Print("Choose an option")
+Input(b)
+If b is in option { name_of_the_option() }
+else ("choose correct option")
+
+
+------------------------------------------------------LOGIN SCREEN------------------------------------------------------
+
+fileopen(users.txt)
+
+Print("Enter Username")
+Input(a)
+
+
+If a is in users.txt {menu()}
+else ("enter a valid username")
+
+------------------------------------------------------SIGNUP SCREEN------------------------------------------------------
+
+fileopen(users.txt)
+
+Print("Enter Username to signup as")
+Input(a)
+
+
+If a is in users.txt ("A user is already listed by this username")
+else fileadd a in users.txt
+
+------------------------------------------------------
